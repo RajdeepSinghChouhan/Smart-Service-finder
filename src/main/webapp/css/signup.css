@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f2f6fb;
+    color: #1d2b40;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login-page {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+}
+
+.login-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d8e2ef;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 45px rgba(31, 58, 99, 0.08);
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+    color: #152238;
+}
+
+.brand p {
+    margin: 8px 0 24px;
+    color: #5b6c87;
+    line-height: 1.5;
+}
+
+.login-form {
+    display: grid;
+    gap: 18px;
+}
+
+.field-group {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.95rem;
+    color: #4a5b76;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d6dfe9;
+    border-radius: 14px;
+    background: #f7f9fc;
+    color: #152238;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #81a8ff;
+    background: #ffffff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 14px;
+    background: #4f8cff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(79, 140, 255, 0.25);
+}
+
+.secondary-link {
+    color: #3a72ff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.secondary-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 24px;
+    }
+
+    .brand h1 {
+        font-size: 1.75rem;
+    }
+}

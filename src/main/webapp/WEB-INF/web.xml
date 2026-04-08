@@ -2,7 +2,26 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   <display-name>SmartServiceFinder</display-name>
   <welcome-file-list>
-    <welcome-file>pages/index.html</welcome-file>
-    <welcome-file>css/index.css</welcome-file>
+    <welcome-file>jsp/login.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>ServiceRequestServlet</servlet-name>
+    <servlet-class>controller.ServiceRequestServlet</servlet-class>
+  </servlet>
+
+	<servlet-mapping>
+    	<servlet-name>ServiceRequestServlet</servlet-name>
+	    <url-pattern>/submitRequest</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+    <servlet-name>ServiceProviderServlet</servlet-name>
+    <servlet-class>controller.ServiceProviderServlet</servlet-class>
+  </servlet>
+
+	<servlet-mapping>
+    	<servlet-name>ServiceProviderServlet</servlet-name>
+	    <url-pattern>/serviceprovider</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
