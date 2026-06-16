@@ -1,0 +1,170 @@
+.book-container {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f2f6fb;
+    color: #1d2b40;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.book-container .book-page {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+}
+
+.book-container .book-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d8e2ef;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 45px rgba(31, 58, 99, 0.08);
+}
+
+.book-container .brand h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+    color: #152238;
+}
+
+.book-container .brand p {
+    margin: 8px 0 24px;
+    color: #5b6c87;
+    line-height: 1.5;
+}
+
+.book-container .book-form {
+    display: grid;
+    gap: 18px;
+}
+
+.book-container .field-group {
+    display: grid;
+    gap: 8px;
+}
+
+.book-container  label {
+    font-size: 0.95rem;
+    color: #4a5b76;
+}
+
+.book-container  input[type="text"],
+.book-container  input[type="password"],
+.book-container  input[type="email"],
+.book-container  input[type="date"],
+.book-container  input[type="time"],
+.book-container  input[type="number"],
+.book-container  input[type="datetime-local"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d6dfe9;
+    border-radius: 14px;
+    background: #f7f9fc;
+    color: #152238;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.book-container  input[type="text"]:focus,
+.book-container  input[type="password"]:focus,
+.book-container  input[type="text"]:focus,
+.book-container  input[type="password"]:focus,
+.book-container  input[type="email"]:focus,
+.book-container  input[type="date"]:focus,
+.book-container  input[type="time"]:focus,
+.book-container  input[type="number"]:focus,
+.book-container  input[type="datetime-local"]:focus 
+{
+    border-color: #81a8ff;
+    background: #ffffff;
+}
+
+.book-container .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.book-container .book-button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 14px;
+    background: #4f8cff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+    
+.book-container .book-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(79, 140, 255, 0.25);
+}
+.book-container .cancel-booking{
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 14px;
+    background: red;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-container .cancel-booking:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(79, 140, 255, 0.25);
+}
+.book-container  .extra-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.book-container  .secondary-link {
+    color: #3a72ff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.95rem;
+    
+}
+
+.book-container  .secondary-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+
+    .book-card {
+        padding: 24px;
+    }
+
+    .brand h1 {
+        font-size: 1.75rem;
+    }
+}
+
+.book-container  textarea{
+     width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d6dfe9;
+    border-radius: 14px;
+    background: #f7f9fc;
+    color: #152238;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.book-container  textarea:focus{
+    border-color: #81a8ff;
+    background: #ffffff;
+}

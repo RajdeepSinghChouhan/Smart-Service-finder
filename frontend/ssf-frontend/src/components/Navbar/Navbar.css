@@ -1,0 +1,73 @@
+.nav{
+    min-height: 70px;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo img{
+    height: 50px;
+    width: 50px;
+}
+.nav .logo h1{
+    font-weight: bold;
+    font-size: 25px;
+    color:black;
+    margin-left: 5px;
+}
+
+.nav .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 450px;
+}
+.nav .links a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+/* Header Buttons */
+.nav .headerBtn button{
+    border: none;
+    border: none;
+    background: #007bff;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.nav .headerBtn button:hover{
+    background: #0056b3;
+    transition: 0.3s ease;
+    transform: scale(1.07);
+}
+.nav .headerBtn .logout{
+    color:rgb(255, 255, 255);
+    background-color:rgb(197, 54, 54);
+}
+.nav .headerBtn .logout a{
+    text-decoration: none;
+    color : white;
+}
+.nav .headerBtn .logout:hover{
+    color:rgb(255, 255, 255);
+    background-color: red;
+}
+
+.nav .headerBtn .dashboard a{
+    text-decoration: none;
+    color : white;
+}

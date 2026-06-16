@@ -1,0 +1,286 @@
+/* Light Theme Service Provider Dashboard Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    margin: 0;
+    color: #007bff;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.userD-home-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+    background-color: rgb(31, 95, 31);
+}
+.logout-btn {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: rgb(114, 3, 3);
+}
+
+
+.sidebar {
+    background-color: #ffffff;
+    width: 250px;
+    min-height: calc(100vh - 80px);
+
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sidebar a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.dashboard-layout{
+    display: flex;
+    width: 100%;
+}
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.main-content h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.recent-bookings {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-bookings h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+.action-btn-accept {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-decoration:none;
+}
+
+.action-btn-accept:hover {
+    background-color: rgb(29, 68, 29);
+}
+
+.action-btn-reject{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-decoration:none;
+}
+
+.action-btn-reject:hover {
+    background-color: rgb(114, 3, 3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
+/* 🔔 Notification Overlay */
+.notif-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* 📦 Notification Box */
+.notif-box {
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 🧾 Each Notification */
+.notif-item {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* ❌ Close Button Area */
+.notif-close {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* 🔔 Bell Wrapper */
+.bell-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* 🔔 Bell Icon */
+.bell-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 🔴 Notification Count Badge */
+.notif-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+
+    background: red;
+    color: white;
+
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}

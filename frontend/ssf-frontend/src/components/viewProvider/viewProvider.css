@@ -1,0 +1,169 @@
+/* viewProvider.css */
+
+.vp {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+
+.vp-card {
+    background: #ffffff;
+    width: 400px;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+/* NAME */
+
+.vp-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+/* SERVICE */
+
+.vp-service {
+    font-size: 18px;
+    color: #007bff;
+
+    margin-bottom: 25px;
+}
+
+/* INFO SECTION */
+
+.vp-info {
+    text-align: left;
+}
+
+.vp-info p {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 14px 0;
+
+    font-size: 17px;
+    color: #444;
+}
+
+.vp-info i {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.vp-label {
+    font-weight: bold;
+    color: #222;
+}
+
+/* AVAILABILITY */
+
+.availability {
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    color: white;
+
+    font-weight: bold;
+}
+
+.available {
+    background-color: #28a745;
+}
+
+.busy {
+    background-color: #dc3545;
+}
+
+/* EMAIL */
+
+.vp-email {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #555;
+}
+
+.vp-email i {
+    color: #007bff;
+}
+
+/* BUTTONS */
+
+.vp-btn {
+    display: inline-block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.vp-btn:hover {
+    background-color: #0056b3;
+}
+
+.home-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #007bff;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+    .vp-card {
+        width: 95%;
+    }
+}

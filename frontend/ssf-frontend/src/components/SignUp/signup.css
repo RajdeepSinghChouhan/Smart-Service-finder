@@ -1,0 +1,143 @@
+.signup-page * {
+    box-sizing: border-box;
+}
+
+.signup-page{
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f2f6fb;
+    color: #1d2b40;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.signup-page .login-page {
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+}
+
+.signup-page .login-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d8e2ef;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 45px rgba(31, 58, 99, 0.08);
+}
+
+.signup-page .brand h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+    color: #152238;
+}
+
+.signup-page .brand p {
+    margin: 8px 0 24px;
+    color: #5b6c87;
+    line-height: 1.5;
+}
+
+.signup-page .login-form {
+    display: grid;
+    gap: 18px;
+}
+
+.signup-page .field-group {
+    display: grid;
+    gap: 8px;
+}
+
+.signup-page label {
+    font-size: 0.95rem;
+    color: #4a5b76;
+}
+
+.signup-page input[type="text"],
+.signup-page input[type="email"],
+.signup-page input[type="number"],
+.signup-page input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d6dfe9;
+    border-radius: 14px;
+    background: #f7f9fc;
+    color: #152238;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.signup-page input[type="text"]:focus,
+.signup-page input[type="email"]:focus,
+.signup-page input[type="number"]:focus,
+.signup-page input[type="password"]:focus {
+    border-color: #81a8ff;
+    background: #ffffff;
+}
+
+.signup-page .form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.signup-page .login-button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 14px;
+    background: #4f8cff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-page .login-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(79, 140, 255, 0.25);
+}
+
+.signup-page .secondary-link {
+    color: #3a72ff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.signup-page .secondary-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .signup-page .login-card {
+        padding: 24px;
+    }
+
+    .signup-page .brand h1 {
+        font-size: 1.75rem;
+    }
+}
+.signup-page select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  background: #f7f9fc;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+/* Focus effect */
+.signup-page select:focus {
+   border-color: #81a8ff;
+    background: #ffffff;
+}
